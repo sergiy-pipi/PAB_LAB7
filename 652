@@ -1,0 +1,10 @@
+def print_long_words(words, n):
+    for w in words:
+        if len(w) > n:
+            print(w)
+
+
+# Приклад використання:
+words = input().split()
+n = int(input())
+print_long_words(words, n)
