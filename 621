@@ -1,0 +1,12 @@
+def print_longest_word(word1, word2):
+    if len(word1) > len(word2):
+        print(word1)
+    elif len(word2) > len(word1):
+        print(word2)
+    else:
+        print(word1)
+        print(word2)
+
+# Приклад використання:
+word1, word2 = input().split()
+print_longest_word(word1, word2)
