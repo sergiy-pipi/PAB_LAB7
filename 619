@@ -1,0 +1,8 @@
+def is_vowel(char):
+    """Перевіряє, чи є латинська літера голосною (A, E, I, O, U), нечутливо до регістру."""
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    return char.lower() in vowels
+
+# Виклик функції
+ch = input("Введіть літеру: ")
+print(is_vowel(ch))
