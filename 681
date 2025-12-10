@@ -1,0 +1,12 @@
+def remove_duplicates(nums):
+    result = []
+    for n in nums:
+        if n not in result:
+            result.append(n)
+    return result
+
+
+# Приклад використання:
+nums = list(map(int, input().split()))
+unique_nums = remove_duplicates(nums)
+print(*unique_nums)
