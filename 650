@@ -1,0 +1,16 @@
+def count_words(sentence):
+    words = sentence.split()          # розбиваємо речення на слова
+    counts = {}                       # словник для підрахунку
+
+    for w in words:
+        if w in counts:
+            counts[w] += 1
+        else:
+            counts[w] = 1
+
+    return counts
+
+
+# Приклад використання:
+sentence = input()
+print(count_words(sentence))
