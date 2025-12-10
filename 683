@@ -1,0 +1,19 @@
+def execute_line(code_line):
+    try:
+        exec(code_line)
+        print("Successfully")
+    except:
+        print("Not fulfilled")
+    finally:
+        print("Done")
+
+
+# Приклад використання:
+while True:
+    try:
+        line = input()
+        if not line:
+            break
+        execute_line(line)
+    except EOFError:
+        break
